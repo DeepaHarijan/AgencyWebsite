@@ -5,11 +5,17 @@ const Container = styled.div`
   height: 10%;
   background-color  :#111 ;
   color: lightgray;
+
+  
 `
 const Wrapper = styled.div`
  padding: 20px;
  display: flex;
  justify-content   :space-between ;
+
+ @media  (max-width: 320px) {
+    padding: 10px;
+  }
 `
 
 const List = styled.ul`
@@ -24,10 +30,16 @@ const ListItem = styled.li`
  @media  (max-width: 991px) {
     font-size: 12px;
   }
+
+  @media  (max-width: 320px) {
+    font-size: 12px;
+  }
 `
 
 const Copyright = styled.span`
-    
+  @media  (max-width: 320px) {
+    font-size: 12px;
+  }  
 `
 
 const Footer = () => {

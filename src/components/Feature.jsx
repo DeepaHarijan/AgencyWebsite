@@ -38,6 +38,10 @@ const Title = styled.span`
  @media  (max-width: 991px) {
     font-size: 55px;
   }
+
+  @media  (max-width:320px) {
+    font-size: 45px;
+  }
     
 `
 const SubTitle = styled.span`
@@ -48,6 +52,10 @@ const SubTitle = styled.span`
  @media  (max-width: 991px) {
     font-size: 20px;
   }
+
+  @media  (max-width:320px) {
+    font-size: 18px;
+  }
 `
 const Desc = styled.p`
  font-size: 20px;
@@ -56,6 +64,10 @@ const Desc = styled.p`
 
  @media  (max-width: 991px) {
     font-size: 16px;
+  }
+
+  @media  (max-width:320px) {
+    font-size: 14px;
   }
 `
 const Button = styled.button`
@@ -72,6 +84,11 @@ cursor: pointer;
     font-size: 16px;
     padding: 12px 18px;
     
+  }
+
+  @media  (max-width:320px) {
+    font-size: 14px;
+    padding: 10px 14px;
   }
 `
 

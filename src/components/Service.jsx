@@ -34,14 +34,15 @@ const Video = styled.video`
      top: 0;
      margin: auto;
      bottom: 0px;
-  
+     width: 100%;
   
 
      @media (max-width: 991px) {
-    
-    position: absolute;
-    bottom: 0;
-    height: 100px;
+    width: 100%;
+  }
+
+  @media (max-width: 320px) {
+    width: 100%;
   }
 `
 
@@ -99,6 +100,12 @@ const Button = styled.button`
     /* @media only screen and (max-width: 480px) {
     display: none;
   } */
+
+  @media  (max-width:320px) {
+    font-size: 16px;
+    padding: 10px;
+    width: 140px;
+  }
 `
 
 const Icon = styled.img`
@@ -114,7 +121,15 @@ top: 0;
 left: 0;
 background-color: rgba(0,0,0,0.5);
 `
-
+const CloseButton = styled.button`
+  position: absolute;
+  background-color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  right: 5px;
+  top: 30%;
+`
 const Service = () => {
 
     const[open, setOpen] = useState(false);
@@ -150,6 +165,7 @@ const Service = () => {
            loop 
            controls 
            src='https://player.vimeo.com/external/449759244.sd.mp4?s=d5f3da46ddc17aa69a7de84f1e420610ebd2a391&profile_id=139&oauth2_token_id=57447761'/>
+           <CloseButton onClick={()=> setOpen(false)}>close</CloseButton>
         </Modal>
        )}
     </Container>

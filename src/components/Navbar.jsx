@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 height:50px;
+position: relative;
 `
 
 const Wrapper = styled.div`
@@ -32,6 +33,7 @@ list-style: none;
 @media only screen and (max-width: 991px) {
     display: none;
   }
+  
  
 `
 const handleChange = ()=>{
@@ -65,21 +67,43 @@ const Button = styled.button`
     font-weight:bold;
     border-radius: 10px;
     cursor: pointer;
+
+    @media screen and (max-width: 768px){
+      display: none;
+    }
 `
 
 const MenuIcon = styled.h1`
-  display: none;
-  @media (max-width: 991px) {
-    
-    display: inline-block;
-    font-size: 16px;
-    padding: 10px;
-    color: white;
-    cursor: pointer;
+  width:30%;
+  height: 100vh;
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  top: 0;
+`
 
-  
-  } 
- 
+const OpenButton = styled.button`
+  position: absolute;
+  top: 0;
+  right: 25px;
+`
+
+const Bars = styled.button`
+display: none;
+  color: #808080;
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    top: 10px;
+    right:8px;
+    padding: 5px;
+    border-radius: 4px;
+    /* transform: translate(-100%, 75%); */
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
 `
 
 
@@ -87,10 +111,17 @@ const MenuIcon = styled.h1`
 const Navbar = () => {
 
   const [open, setOpen]= useState(false)
+  const smallScreen  = window.screen.width <= 480 ? true : false;
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const toggleNav = () =>{
+      setToggleMenu(!toggleMenu)
+  }
   return (
     <Container>
         <Wrapper>
             <Left><Logo>Agency</Logo>
+           <div>
+            {(toggleMenu && (
             <Menu>
                 <MenuItem>Home</MenuItem>
                 <MenuItem>Features</MenuItem>
@@ -98,9 +129,18 @@ const Navbar = () => {
                 <MenuItem>Pricing</MenuItem>
                 <MenuItem>Contact</MenuItem>
             </Menu>
+            ))}
+            </div>
             </Left>
            <Button>JOIN TODAY</Button>
-           <MenuIcon open={open} onClick={()=>setOpen(true)}>Menu</MenuIcon>
+           
+           <Bars onClick={toggleNav}>Menu</Bars>
+           {/* {smallScreen && open &&(
+              <MenuIcon>
+                
+                <Menu open={open}></Menu>
+              </MenuIcon>
+            )} */}
         </Wrapper>
     </Container>
   )

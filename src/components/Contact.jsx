@@ -18,11 +18,17 @@ const Wrapper = styled.div`
  @media  (max-width: 991px) {
     flex-direction: column;
   }
+
+  
 `
 
 const FormContainer = styled.div`
  width: 50%; 
  @media  (max-width: 991px) {
+    width: 100%;
+  }
+
+  @media  (max-width:320px) {
     width: 100%;
   }
 `
@@ -34,6 +40,10 @@ const  Title = styled.h1`
     margin: 20px;
   }
 
+  @media  (max-width:320px) {
+    font-size: 14px;
+    /* margin-top: 100px; */
+  }
 `
 const Form = styled.form`
     height: 250px;
@@ -57,6 +67,9 @@ const LeftForm = styled.div`
     margin-right: 0;
     margin-top: 35px;
   }
+  @media  (max-width: 320px) {
+    margin-top: 20px;
+  }
 `
 const RightForm = styled.div`
   height: 100%;
@@ -73,6 +86,12 @@ const Input = styled.input`
     padding: 10px;
     margin: 10px;
   }
+
+  @media  (max-width: 320px) {
+    width: 200px;
+    padding: 2px;
+    margin: 6px;
+  }
 `
 const TextArea = styled.textarea`
     width: 200px;
@@ -83,6 +102,12 @@ const TextArea = styled.textarea`
     width: 300px;
     padding: 10px;
     margin: 10px;
+  }
+
+  @media  (max-width: 320px) {
+    width: 200px;
+    padding: 2px;
+    margin: 6px;
   }
 `
 
@@ -112,6 +137,10 @@ const AddressContainer = styled.div`
  @media  (max-width: 991px) {
     margin-top: 60px;
   }
+
+  @media  (max-width: 320px) {
+   margin-top: 10px;
+  }
 `
 
 const AddressItem = styled.div`
@@ -122,10 +151,18 @@ const AddressItem = styled.div`
  @media  (max-width: 991px) {
     margin-bottom: 20px;
   }
+
+  @media  (max-width: 320px) {
+    margin-bottom: 10px;
+  }
 `
 const Icon = styled.img`
    width:20px;
     margin-right: 20px;
+
+    @media  (max-width: 320px) {
+    width: 15px;
+  }
 `
 const Text = styled.span`
     font-size: 20px;
@@ -134,6 +171,11 @@ const Text = styled.span`
     @media  (max-width: 991px) {
     font-size: 14px;
     
+  }
+
+  @media  (max-width: 320px) {
+    font-size: 10px;
+    width: 70px;
   }
 `
 

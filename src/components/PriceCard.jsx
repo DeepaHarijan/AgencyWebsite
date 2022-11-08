@@ -13,8 +13,13 @@ background-color: #fff;
 border-radius: 10px;
 flex-direction: column;
 @media  (max-width: 991px) {
-    padding: 8px;
-    margin: 8px;
+    padding: 6px;
+    margin: 6px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 3px;
+    margin: 3px;
   }
 
 `
@@ -29,6 +34,11 @@ font-size: 50px;
 @media  (max-width: 991px) {
     font-size: 20px;
   }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 const Type = styled.button`
 padding: 10px;
@@ -38,7 +48,7 @@ color: crimson;
 background-color: #fff;
 border-radius: 20px;
 @media  (max-width: 991px) {
-    padding: 6px;
+    padding: 3px;
     font-size: 10px;
   }
 `
@@ -50,7 +60,12 @@ const ListItem = styled.li`
 margin: 30px 0;
 @media  (max-width: 991px) {
     font-size: 10px;
-    margin: 20px 0;
+    margin: 10px 0;
+  }
+
+  @media  (max-width: 320px) {
+    font-size: 8px;
+    margin: 6px;
   }
 `
 const Button = styled.button`
