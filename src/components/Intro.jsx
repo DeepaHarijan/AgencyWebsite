@@ -35,6 +35,11 @@ const Title = styled.h1`
     width: 100%;
     font-size: 30px;
   }
+
+  @media  (max-width: 260px) {
+    width: 100%;
+    font-size: 28px;
+  }
 `
 const Desc = styled.p`
    width: 60%;
@@ -44,6 +49,11 @@ const Desc = styled.p`
    @media (max-width: 991px) {
     width: 100%;
     font-size: 18px;
+  }
+
+  @media  (max-width: 260px) {
+    width: 100%;
+    font-size: 14px;
   }
 `
 const Info = styled.div`
@@ -75,6 +85,11 @@ const Button = styled.button`
     font-size: 12px;
     letter-spacing: 1px;
   }
+
+  @media  (max-width: 260px) {
+  padding: 8px;
+  font-size: 10px;
+  }
 `
 const Contact = styled.div`
     display: flex;
@@ -85,11 +100,18 @@ const Phone = styled.span`
     color:#f0667d;
     font-weight: bold;
 
+    @media  (max-width: 260px) {
+    font-size: 12px;
+  }
 `
 
 const ContactText = styled.span`
     color:gray;
     margin-top: 5px;
+
+    @media  (max-width: 260px) {
+    font-size: 12px;
+  }
 `
 
 const Right = styled.div`

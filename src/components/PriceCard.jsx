@@ -22,6 +22,11 @@ flex-direction: column;
     margin: 3px;
   }
 
+  @media  (max-width: 260px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 `
 const PriceContainer = styled.div`
 display: flex;
@@ -39,6 +44,10 @@ font-size: 50px;
     display: flex;
     flex-direction: column;
   }
+
+  @media  (max-width: 260px) {
+    font-size: 14px;
+  }
 `
 const Type = styled.button`
 padding: 10px;
@@ -50,6 +59,13 @@ border-radius: 20px;
 @media  (max-width: 991px) {
     padding: 3px;
     font-size: 10px;
+  }
+
+  @media  (max-width: 260px) {
+    padding: 1;
+    font-size: 8px;
+    margin: 3px 0;
+
   }
 `
 const List = styled.ul`
@@ -67,6 +83,11 @@ margin: 30px 0;
     font-size: 8px;
     margin: 6px;
   }
+
+  @media  (max-width: 260px) {
+    margin: 2px;
+
+  }
 `
 const Button = styled.button`
 border: none;
@@ -79,6 +100,11 @@ font-weight: bold;
 @media  (max-width: 991px) {
     font-size: 8px;
     padding: 8px;
+  }
+
+  @media  (max-width: 260px) {
+    padding: 4px;
+    font-size: 6px;
   }
 `
 

@@ -141,6 +141,11 @@ const AddressContainer = styled.div`
   @media  (max-width: 320px) {
    margin-top: 10px;
   }
+
+  @media  (max-width: 260px) {
+    width: 100%;
+    
+  }
 `
 
 const AddressItem = styled.div`
@@ -155,6 +160,13 @@ const AddressItem = styled.div`
   @media  (max-width: 320px) {
     margin-bottom: 10px;
   }
+
+  @media  (max-width: 260px) {
+    margin-bottom: 0;
+    display: inline-block;
+    margin: auto;
+  
+  }
 `
 const Icon = styled.img`
    width:20px;
@@ -162,6 +174,10 @@ const Icon = styled.img`
 
     @media  (max-width: 320px) {
     width: 15px;
+  }
+
+  @media  (max-width: 260px) {
+    width: 10px;
   }
 `
 const Text = styled.span`
@@ -176,6 +192,10 @@ const Text = styled.span`
   @media  (max-width: 320px) {
     font-size: 10px;
     width: 70px;
+  }
+
+  @media  (max-width: 260px) {
+    font-size: 6px;
   }
 `
 

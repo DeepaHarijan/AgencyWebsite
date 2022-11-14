@@ -104,6 +104,11 @@ display: none;
     font-size: 1.1rem;
     cursor: pointer;
   }
+
+  @media (max-width: 260px){
+    padding: 3px;
+    font-size: 0.9rem;
+  }
 `
 
 

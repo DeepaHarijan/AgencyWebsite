@@ -62,7 +62,11 @@ const Wrapper = styled.div`
   flex-direction  :column ;
 `
 const Title = styled.h1`
-    
+  @media  (max-width: 260px) {
+
+    font-size: 26px;
+    margin-top: -10px;
+  }  
 `
 const Desc = styled.p`
    font-size: 20px;
@@ -105,6 +109,11 @@ const Button = styled.button`
     font-size: 16px;
     padding: 10px;
     width: 140px;
+  }
+
+  @media  (max-width: 260px) {
+    padding: 6px;
+    font-size: 14px;
   }
 `
 

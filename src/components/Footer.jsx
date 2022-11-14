@@ -16,6 +16,8 @@ const Wrapper = styled.div`
  @media  (max-width: 320px) {
     padding: 10px;
   }
+
+ 
 `
 
 const List = styled.ul`
@@ -33,6 +35,10 @@ const ListItem = styled.li`
 
   @media  (max-width: 320px) {
     font-size: 12px;
+  }
+
+  @media  (max-width: 260px) {
+    font-size: 8px;
   }
 `
 
